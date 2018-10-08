@@ -30,3 +30,52 @@
     transform: rotate(360deg);
   }
 }
+
+.transition-async {
+  background-color: yellow;
+}
+
+.transition-async-enter {
+  opacity: 0.01;
+  transform: scale(0.9) translateY(50%);
+  background-color: #61dafb;
+}
+.transition-async-enter-active {
+  opacity: 1;
+  transform: scale(1) translateY(0%);
+  transition: all 300ms ease-out;
+}
+.transition-async-exit {
+  opacity: 1;
+  transform: scale(1) translateY(0%);
+}
+.transition-async-exit-active {
+  opacity: 0.01;
+  transform: scale(0.9) translateY(50%);
+  transition: all 300ms ease-out;
+}
+
+
+.transition-import {
+  background-color: red;
+}
+
+.transition-import-enter {
+  opacity: 0.01;
+  transform: scale(0.1) translateY(50%);
+  background-color: #61dafb;
+}
+.transition-import-enter-active {
+  opacity: 1;
+  transform: scale(1) translateY(0%);
+  transition: all 1000ms ease-out;
+}
+.transition-import-exit {
+  opacity: 1;
+  transform: scale(1) translateY(0%);
+}
+.transition-import-exit-active {
+  opacity: 0.01;
+  transform: scale(0.1) translateY(50%);
+  transition: all 1000ms ease-out;
+}
